@@ -62,6 +62,16 @@
 
 `Content Moderation` `Human-in-the-loop` `FastAPI` `Next.js` `PostgreSQL`
 
+---
+
+### [`xiaohongshu-ai-content-studio`](https://github.com/PLKJ666/xiaohongshu-ai-content-studio)
+
+**小红书 AI 内容创作工作台**
+
+把爆款发现、提示词分析、批量生图、AI 花字、图片加工和素材中转连接成连续内容生产流程。公开版保留完整前后端实现，已通过 918 项后端测试、75 项前端测试、前端生产构建和隐私扫描。
+
+`Image Generation` `Multi-model Adapter` `SSE` `Canvas` `Pillow` `FastAPI` `React`
+
 ## 我解决过的真实问题
 
 | 业务问题 | 我的工作 | 可验证结果 |
@@ -108,6 +118,7 @@ Selected work includes:
 - **Marketing Asset Delivery Platform:** large-file upload, scoped authorization, deduplication, controlled delivery, and asset lifecycle management.
 - **KOL Performance Data Agent:** incremental campaign tracking, 30-day windows, data-quality gates, Dagster orchestration, and business writeback.
 - **ContentGuard AI:** a personal human-in-the-loop marketing content compliance platform.
+- **Xiaohongshu AI Content Studio:** an end-to-end workspace for reference discovery, prompt analysis, batch image generation, visual finishing, and asset handoff.
 
 Public repositories use sanitized reconstructions, mock APIs, synthetic data, and newly written code. They do not contain company source code, customer data, credentials, or private integrations.
 
