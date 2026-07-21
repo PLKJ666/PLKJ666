@@ -72,6 +72,16 @@
 
 `Image Generation` `Multi-model Adapter` `SSE` `Canvas` `Pillow` `FastAPI` `React`
 
+---
+
+### [`dolphin-avss-reproduction`](https://github.com/PLKJ666/dolphin-avss-reproduction)
+
+**Dolphin 视听语音分离复现与双支路实验**
+
+基于公开 Dolphin 框架完成 LRS2 官方权重基线评估，并探索 speech/noise 双支路 reverse selective attention。明确保留上游论文、模型和代码归属，不把实验扩展写成原模型原创或未经对比的性能提升。
+
+`Audio-Visual Speech Separation` `LRS2` `PyTorch` `PESQ` `STOI` `Dual Branch`
+
 ## 我解决过的真实问题
 
 | 业务问题 | 我的工作 | 可验证结果 |
@@ -119,6 +129,7 @@ Selected work includes:
 - **KOL Performance Data Agent:** incremental campaign tracking, 30-day windows, data-quality gates, Dagster orchestration, and business writeback.
 - **ContentGuard AI:** a personal human-in-the-loop marketing content compliance platform.
 - **Xiaohongshu AI Content Studio:** an end-to-end workspace for reference discovery, prompt analysis, batch image generation, visual finishing, and asset handoff.
+- **Dolphin AVSS Reproduction:** an attributed LRS2 reproduction with baseline evaluation and an experimental speech/noise reverse-selective dual branch.
 
 Public repositories use sanitized reconstructions, mock APIs, synthetic data, and newly written code. They do not contain company source code, customer data, credentials, or private integrations.
 
