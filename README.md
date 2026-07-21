@@ -78,7 +78,7 @@
 
 **Dolphin 视听语音分离复现与双支路实验**
 
-基于公开 Dolphin 框架完成 LRS2 官方权重基线评估，并探索 speech/noise 双支路 reverse selective attention。明确保留上游论文、模型和代码归属，不把实验扩展写成原模型原创或未经对比的性能提升。
+基于公开 Dolphin 框架，独立完成远程 GPU 环境准备、依赖隔离、单卡/多卡训练、运行监控、故障排查和 LRS2 官方权重基线评估，并探索 speech/noise 双支路 reverse selective attention。明确保留上游归属，不把实验扩展写成原模型原创或未经对比的性能提升。
 
 `Audio-Visual Speech Separation` `LRS2` `PyTorch` `PESQ` `STOI` `Dual Branch`
 
