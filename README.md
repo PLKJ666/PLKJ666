@@ -1,136 +1,74 @@
 # PLKJ666
 
-### AI 应用开发 · AI 全栈工程 · 企业后端 · 营销数据工作流
+### AI 应用开发 · 企业工作流 · 全栈后端 · 营销数据工程
 
-我关注的不是给产品套一层 AI，而是把企业内容生产、素材流转和营销数据中的人工阻塞，变成真正可运行、可验证、可维护的业务系统。
+我把企业内容生产、素材交付和营销数据中的人工阻塞，变成可运行、可验证、可维护的业务系统。关注的不只是“接入模型”，更是权限、状态、所有权、幂等、重试、交付证据和数据回写这些决定系统能否真正落地的环节。
 
-在 AI 营销科技实习中，我围绕真实内部流程完成需求拆解、方案设计、开发部署和上线迭代；在个人项目中，我继续验证 Agent 工具调用、内容审核、人机协同和可重复评估。
+`3 个公开项目` · `2 个真实上线系统` · `1 条营销数据闭环` · `从需求到部署独立交付`
 
-## 精选项目
+## 公开可查看 / Public projects
 
-### [`ai-marketing-asset-agent`](https://github.com/PLKJ666/ai-marketing-asset-agent)
+### [ContentGuard AI 内容卫士](https://github.com/PLKJ666/contentguard-ai)
 
-**营销运营工作流 Agent**
+**让营销内容从 Brief、脚本、视频到 AI 预审和人工终审都有明确状态与责任。**
 
-把找素材、查 KOL 效果、生成营销文案和形成复盘文档连接为可追踪的 Agent 工作流。项目包含受控工具调用、结构化输出、20 条离线评估集、FastAPI、Next.js、CI、截图和演示视频。
+面向品牌、代理商、创作者和运营角色设计的个人 AI 全栈项目。它把分散的内容版本、审核意见和最终决策收进同一条人机协同流程，并覆盖多租户、异步媒体处理和可追踪交付。
 
-`RAG-style retrieval` `Tool Calling` `Structured Output` `Evaluation` `FastAPI` `Next.js`
+`AI Content Review` `Human-in-the-loop` `FastAPI` `Next.js` `PostgreSQL` `Celery`
 
----
+### [小红书 AI 内容创作工作台](https://github.com/PLKJ666/xiaohongshu-ai-content-studio)
 
-### [`enterprise-content-workflow`](https://github.com/PLKJ666/enterprise-content-workflow)
+**把选题参考、提示词分析、批量生图、花字加工和素材中转连成一条连续生产线。**
 
-**企业内容创建与流转自动化**
+这是我独立完成的内容生产工具，不是公司生产系统。公开版本保留完整 FastAPI + React 实现；GitHub Actions 已验证 918 项后端测试、75 项前端测试、生产构建和隐私扫描。
 
-解决内容创建额度、外部内容导入和资源所有权移交依赖人工的问题。通过应用身份、异步任务、幂等、失败重试和安全回执，让跨系统任务在重复请求和异常之后仍然只产生一个归属正确、结果明确的业务资源。
+`Content Workflow` `Image Generation` `SSE` `Canvas` `Pillow` `FastAPI` `React`
 
-原业务系统上线约 5 周，服务约 100 名独立用户，成功处理 1,535 次内容操作；按已确认内部口径，允许规则范围内成功率超过 99%。公开仓库为从零脱敏重写，包含 64 项测试。
+### [企业内容工作流案例](https://github.com/PLKJ666/enterprise-content-workflow)
 
-`Async Workflow` `Idempotency` `Retry` `Ownership Transfer` `TypeScript`
+**让跨系统内容任务在失败、重试和异步执行后，仍只产生一个归属正确、结果明确的业务资源。**
 
----
+公开仓库是基于真实企业内容自动化经历从零重写的脱敏案例，展示创建与导入、所有权移交、幂等、重试、异步状态和安全回执。原部署约运行 5 周，服务约 100 名独立用户，成功处理 1,535 次内容操作；按已确认内部口径，允许规则范围内成功率超过 99%。公开 Demo 已通过 64 项测试及完整 CI。
 
-### [`marketing-asset-delivery-platform`](https://github.com/PLKJ666/marketing-asset-delivery-platform)
+`Async Workflow` `Idempotency` `Retry` `Ownership Transfer` `Fastify` `TypeScript`
 
-**企业营销素材版本、权限、交付与归档控制系统**
+## 私有案例 / Private case studies
 
-解决素材分散、版本混乱、客户拿错版本、大文件交付不稳定和交付后无法追溯的问题。真实系统完成上传、预览、查重、权限、反馈、分享、回收和交付链路；公开仓库验证分片上传、服务端校验、项目权限、软删除和生命周期控制。
+这些仓库保留为 Private，用于保护实现边界；这里仅展示经过脱敏、可以对外说明的业务问题与个人贡献。
 
-原内部部署约投入 40 天，于 2026 年初上线，服务约 80 名活跃用户，管理 1,200+ 份素材。公开仓库包含 30 项测试和完整隐私扫描。
-
-`Multipart Upload` `Object Storage` `Authorization` `Lifecycle` `Fastify`
-
----
-
-### [`kol-performance-data-agent`](https://github.com/PLKJ666/kol-performance-data-agent)
-
-**KOL 投放效果采集、追踪与业务回写闭环**
-
-把分散在项目台账、平台接口和人工记录中的投放数据，整理成“项目名单同步 → 效果增量拉取 → 30 天追踪 → 数据质量检查 → 业务回写”的可观察数据工作流。
-
-公开仓库包含 Dagster assets、SQLite 持久化、分页重试、项目过滤、增量幂等、请求/回写日志、8 项测试、Docker 和已通过的 GitHub Actions。
-
-`Dagster` `Data Pipeline` `Incremental Sync` `SQLite` `Writeback`
-
----
-
-### [`contentguard-ai`](https://github.com/PLKJ666/contentguard-ai)
-
-**营销内容合规审核平台**
-
-围绕 Brief、脚本、视频、AI 预审和人工终审构建可追踪的内容交付流程，探索品牌、代理商和创作者之间的人机协同审核。它是独立个人项目，不表述为真实客户生产系统。
-
-`Content Moderation` `Human-in-the-loop` `FastAPI` `Next.js` `PostgreSQL`
-
----
-
-### [`xiaohongshu-ai-content-studio`](https://github.com/PLKJ666/xiaohongshu-ai-content-studio)
-
-**小红书 AI 内容创作工作台**
-
-把爆款发现、提示词分析、批量生图、AI 花字、图片加工和素材中转连接成连续内容生产流程。公开版保留完整前后端实现，已通过 918 项后端测试、75 项前端测试、前端生产构建和隐私扫描。
-
-`Image Generation` `Multi-model Adapter` `SSE` `Canvas` `Pillow` `FastAPI` `React`
-
----
-
-### [`dolphin-avss-reproduction`](https://github.com/PLKJ666/dolphin-avss-reproduction)
-
-**Dolphin 视听语音分离复现与双支路实验**
-
-基于公开 Dolphin 框架，独立完成远程 GPU 训练和 LRS2 基线评估；针对原模型融合后直接进入单路分离器的结构，设计 speech/noise 竞争双支路，以 reverse selective attention 抑制噪声上下文，并加入可学习残差强度、长序列池化和可消融配置。保留上游归属，不把实验创新包装成未经验证的性能提升。
-
-`Audio-Visual Speech Separation` `LRS2` `PyTorch` `PESQ` `STOI` `Dual Branch`
-
-## 我解决过的真实问题
-
-| 业务问题 | 我的工作 | 可验证结果 |
+| 案例 | 解决的问题 | 已确认结果 |
 | --- | --- | --- |
-| 内容创建、导入和所有权移交依赖人工 | 从 0 到 1 设计、开发、部署企业内容工作流 | 约 100 名用户、1,535 次成功操作、成功率 99%+ |
-| 素材分散、版本和权限不清、大文件难交付 | 完成三端产品设计、全栈开发、对象存储与生产部署 | 约 80 名活跃用户、1,200+ 份素材 |
-| KOL 效果查询和回写分散、口径不一致 | 设计同步、效果拉取、增量追踪和业务回写管道 | 覆盖多项目配置并完成真实数据同步与回写 |
+| `marketing-asset-delivery-platform` | 素材分散、版本与权限不清、大文件交付不稳定、交付后难追溯 | 原系统约 80 名活跃用户，管理 1,200+ 份素材；我完成三端产品、全栈开发、对象存储与生产部署 |
+| `kol-performance-data-agent` | KOL 效果数据分散在项目台账与平台接口，人工查询和回写容易遗漏 | 独立设计名单同步、增量拉取、30 天追踪、质量检查和业务回写流程 |
+| `ai-marketing-asset-agent` | 素材检索、效果查询、文案生成和复盘文档彼此割裂 | 用受控工具调用、结构化输出和离线评估验证营销运营 Agent 工作流 |
+| `dolphin-avss-reproduction` | 视听语音分离复现与新结构实验缺少完整训练、评估和对照链路 | 独立完成远程 GPU 训练与 LRS2 基线评估，设计 speech/noise 竞争双支路实验 |
 
-以上数据均为经过确认的脱敏历史口径，不代表公开 Demo 的性能或采用率。
+## 我能负责什么
 
-## 我的工作方式
-
-- 先理解使用者、原流程、业务约束和成功标准，再选择技术方案。
-- 对长期运行的流程补齐权限、幂等、重试、日志、回写和失败处理。
-- 用真实使用范围、测试、CI、演示和反馈证明结果，不编造指标。
-- 区分个人贡献、团队成果和公司成果。
-- 公开内容只使用脱敏重构、Mock API、示例数据和重新编写的代码。
-
-## 技术方向
-
-`Python` `TypeScript` `FastAPI` `Fastify` `Next.js` `React` `PostgreSQL` `SQLite` `Redis` `Dagster` `Docker` `GitHub Actions`
-
-`LLM Application` `RAG-style Retrieval` `Tool Calling` `Structured Output` `Evaluation` `Human-in-the-loop`
-
-`Async Workflow` `Idempotency` `Retry` `Object Storage` `Data Pipeline` `Observability`
+- **把模糊需求变成可交付系统：**梳理使用者、原流程、约束和完成标准，再设计产品与技术方案。
+- **把 Demo 推到长期运行：**补齐权限、队列、幂等、重试、日志、对象存储、回写、部署和故障处理。
+- **把 AI 放进受控流程：**使用结构化输出、工具调用、评估和人工确认，不把模型输出直接当最终业务事实。
+- **把成果变成证据：**以真实使用范围、测试、CI、演示和反馈说明价值，不编造指标。
 
 ## 公开边界
 
-企业案例仅保留经过确认的脱敏业务事实。公开仓库不包含公司源码、内部数据、真实客户或品牌名称、用户标识、飞书链接、对象存储信息、内部域名、凭据或未脱敏截图。
-
-当前部分案例仓库保持 Private，待最终许可和公开检查完成后再决定可见性。
+企业案例只保留经过确认的脱敏业务事实。公开仓库仅使用从零重写的实现、Mock API 和示例数据，不包含公司源码、内部数据、真实客户或品牌名称、人员标识、平台链接、对象存储信息、内部域名、凭据或未脱敏截图。
 
 <details>
-<summary><strong>English Profile</strong></summary>
+<summary><strong>English profile</strong></summary>
 
-### AI Application · Full-Stack · Backend · Marketing Data Workflows
+### AI applications · Enterprise workflows · Full-stack backend · Marketing data engineering
 
-I build operational, verifiable, and maintainable systems for enterprise content production, asset delivery, and marketing data workflows. My work focuses on the parts that generic AI buttons do not replace automatically: permissions, workflow state, ownership, delivery evidence, data contracts, retries, and evaluation.
+I turn manual bottlenecks in enterprise content, asset delivery, and marketing data operations into systems that are operational, verifiable, and maintainable. My work focuses on the controls a generic AI button does not provide by itself: permissions, workflow state, ownership, idempotency, retries, delivery evidence, and data writeback.
 
-Selected work includes:
+**Public projects**
 
-- **AI Marketing Asset Agent:** controlled retrieval and tools for asset search, KOL performance queries, copy generation, review documents, and offline evaluation.
-- **Enterprise Content Workflow:** reliable content creation/import, ownership transfer, idempotency, retries, and asynchronous receipts.
-- **Marketing Asset Delivery Platform:** large-file upload, scoped authorization, deduplication, controlled delivery, and asset lifecycle management.
-- **KOL Performance Data Agent:** incremental campaign tracking, 30-day windows, data-quality gates, Dagster orchestration, and business writeback.
-- **ContentGuard AI:** a personal human-in-the-loop marketing content compliance platform.
-- **Xiaohongshu AI Content Studio:** an end-to-end workspace for reference discovery, prompt analysis, batch image generation, visual finishing, and asset handoff.
-- **Dolphin AVSS Reproduction:** an attributed LRS2 reproduction with baseline evaluation and an experimental speech/noise reverse-selective dual branch.
+- [ContentGuard AI](https://github.com/PLKJ666/contentguard-ai): a personal human-in-the-loop platform for traceable marketing content review across briefs, scripts, video, AI pre-checks, and final human decisions.
+- [Xiaohongshu AI Content Studio](https://github.com/PLKJ666/xiaohongshu-ai-content-studio): an end-to-end workspace for reference discovery, prompt analysis, batch image generation, visual finishing, and asset handoff.
+- [Enterprise Content Workflow](https://github.com/PLKJ666/enterprise-content-workflow): a sanitized, from-scratch case study of reliable creation/import, ownership transfer, idempotency, retries, and bounded asynchronous receipts.
 
-Public repositories use sanitized reconstructions, mock APIs, synthetic data, and newly written code. They do not contain company source code, customer data, credentials, or private integrations.
+**Private case studies** cover enterprise asset delivery, KOL performance data workflows, a controlled marketing operations Agent, and audio-visual speech separation research. Their repositories remain private; only sanitized business problems, personal responsibilities, and verified outcomes are described publicly.
+
+Public repositories contain newly written implementations, mock APIs, and synthetic data. They do not contain company source code, customer data, credentials, or private integrations.
 
 </details>
