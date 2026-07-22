@@ -41,6 +41,7 @@
 | `marketing-asset-delivery-platform` | 素材分散、版本与权限不清、大文件交付不稳定、交付后难追溯 | 原系统约 80 名活跃用户，管理 1,200+ 份素材；我完成三端产品、全栈开发、对象存储与生产部署 |
 | `kol-performance-data-agent` | KOL 效果数据分散在项目台账与平台接口，人工查询和回写容易遗漏 | 独立设计名单同步、增量拉取、30 天追踪、质量检查和业务回写流程 |
 | `ai-marketing-asset-agent` | 素材检索、效果查询、文案生成和复盘文档彼此割裂 | 用受控工具调用、结构化输出和离线评估验证营销运营 Agent 工作流 |
+| `enterprise-account-lifecycle-automation` | 入职、离职和额度审批跨系统执行，容易重复开户、漏停账号、重复加额和泄露临时凭据 | 独立完成真实系统，并从零重写多租户、幂等、fencing、Outbox 和凭据安全案例；Private 仓库已通过 117 项测试 |
 | `dolphin-avss-reproduction` | 视听语音分离复现与新结构实验缺少完整训练、评估和对照链路 | 独立完成远程 GPU 训练与 LRS2 基线评估，设计 speech/noise 竞争双支路实验 |
 
 ## 我能负责什么
@@ -67,7 +68,7 @@ I turn manual bottlenecks in enterprise content, asset delivery, and marketing d
 - [Xiaohongshu AI Content Studio](https://github.com/PLKJ666/xiaohongshu-ai-content-studio): an end-to-end workspace for reference discovery, prompt analysis, batch image generation, visual finishing, and asset handoff.
 - [Enterprise Content Workflow](https://github.com/PLKJ666/enterprise-content-workflow): a sanitized, from-scratch case study of reliable creation/import, ownership transfer, idempotency, retries, and bounded asynchronous receipts.
 
-**Private case studies** cover enterprise asset delivery, KOL performance data workflows, a controlled marketing operations Agent, and audio-visual speech separation research. Their repositories remain private; only sanitized business problems, personal responsibilities, and verified outcomes are described publicly.
+**Private case studies** cover enterprise asset delivery, KOL performance data workflows, a controlled marketing operations Agent, employee account lifecycle automation, and audio-visual speech separation research. Their repositories remain private; only sanitized business problems, personal responsibilities, and verified outcomes are described publicly.
 
 Public repositories contain newly written implementations, mock APIs, and synthetic data. They do not contain company source code, customer data, credentials, or private integrations.
 
