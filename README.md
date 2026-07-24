@@ -18,7 +18,7 @@
 
 面向品牌、代理商、创作者和运营角色设计的 AI 全栈项目。它把分散的内容版本、审核意见和最终决策收进同一条人机协同流程，并覆盖多租户、异步媒体处理和可追踪交付。
 
-[![ContentGuard AI 品牌方项目看板](https://raw.githubusercontent.com/PLKJ666/contentguard-ai/main/docs/portfolio/contentguard-project-dashboard.png)](https://github.com/PLKJ666/contentguard-ai)
+[![ContentGuard AI 内容审核工作台](https://raw.githubusercontent.com/PLKJ666/PLKJ666/main/docs/portfolio/covers/contentguard-ai-cover.png)](https://github.com/PLKJ666/contentguard-ai)
 
 - **关键能力：** 结构化 AI 审核、人机协同决策、多租户权限、异步视频处理、SSE 进度与审计记录
 - **技术栈：** FastAPI · Next.js · PostgreSQL · Celery · Redis · Logto
@@ -28,6 +28,8 @@
 
 **把选题参考、提示词分析、批量生图、花字加工和素材中转连成一条连续生产线。**
 
+[![小红书 AI 内容创作工作台](https://raw.githubusercontent.com/PLKJ666/PLKJ666/main/docs/portfolio/covers/xiaohongshu-ai-content-studio-cover.png)](https://github.com/PLKJ666/xiaohongshu-ai-content-studio)
+
 - **解决问题：** 运营人员不再需要在多个模型、表格和图片工具之间反复切换
 - **关键能力：** 多模型适配、批量任务、失败恢复、SSE 增量进度、Canvas 预览与 Pillow 全分辨率输出
 - **验证证据：** 918 项后端测试、75 项前端测试、生产构建与隐私扫描
@@ -36,6 +38,8 @@
 ### [企业内容工作流案例](https://github.com/PLKJ666/enterprise-content-workflow)
 
 **让跨系统内容任务在失败、重试和异步执行后，仍只产生一个归属正确、结果明确的业务资源。**
+
+[![企业内容工作流案例](https://raw.githubusercontent.com/PLKJ666/PLKJ666/main/docs/portfolio/covers/enterprise-content-workflow-cover.png)](https://github.com/PLKJ666/enterprise-content-workflow)
 
 - **解决问题：** 创建、导入、所有权移交、幂等重试和异步回执之间缺少统一业务完成标准
 - **真实结果：** 原部署约运行 5 周，服务约 100 名独立用户，成功处理 1,535 次内容操作；按已确认内部口径，允许规则范围内成功率超过 99%
